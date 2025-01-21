@@ -1,0 +1,79 @@
+/* General Styling */
+body {
+    font-family: 'Verdana', sans-serif;
+    background: #000000; /* Dark background */
+    color: #00e777; /* Bright green text for high contrast */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 20px 0;
+    color: #00e777; /* Bright green */
+}
+
+.timer {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.instructions {
+    font-size: 1.1em;
+    margin: 20px auto;
+    color: #f1f1f1; /* Light grey for subtle contrast */
+}
+
+/* Grid Styling */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(15, 30px);
+    grid-template-rows: repeat(15, 30px);
+    gap: 4px;
+    margin: 20px auto;
+    width: 490px; /* Adjusted for border and gaps */
+    height: 490px;
+    background: #222; /* Darker grey background */
+    border: 2px solid #00e777; /* Green border for emphasis */
+    box-shadow: 0 0 15px rgba(0, 231, 119, 0.5);
+}
+
+/* Grid Cells */
+.grid div {
+    width: 30px;
+    height: 30px;
+    background: #000000; /* Light grey for default cells */
+    transition: background 0.2s ease-in-out;
+}
+
+.grid div:hover {
+    background: #000000; /* Highlighted green on hover */
+}
+
+/* Shooter Style */
+.shooter {
+    background: #000000; /* Bright green for the shooter */
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 231, 119, 0.8); /* Glowing green */
+}
+
+/* Invader Style */
+.invader {
+    background: #e74c3c; /* Bright red for invaders */
+    border-radius: 20%;
+    box-shadow: 0 0 8px rgba(231, 76, 60, 0.8); /* Red glow */
+}
+
+/* Boss Style */
+.boss {
+    background: #ff9800; /* Orange for the boss */
+    border-radius: 50%;
+    box-shadow: 0 0 12px rgba(255, 152, 0, 0.8); /* Orange glow */
+}
+
+/* Bullet Style */
+.bullet {
+    background: #00e5ff; /* Cyan bullets */
+    box-shadow: 0 0 8px rgba(0, 229, 255, 0.8); /* Cyan glow */
+}
